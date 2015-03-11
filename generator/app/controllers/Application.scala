@@ -8,6 +8,10 @@ object Application extends Controller {
     Ok(views.html.index())
   }
 
+  def news = Action {
+    Ok(views.html.news())
+  }
+  
   def download = Action {
     Ok(views.html.download())
   }

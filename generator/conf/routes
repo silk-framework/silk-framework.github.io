@@ -3,6 +3,7 @@
 # ~~~~
 
 GET        /                    controllers.Application.index()
+GET        /news                controllers.Application.news()
 GET        /download            controllers.Application.download()
 GET        /support             controllers.Application.support()
 GET        /publications        controllers.Application.publications()

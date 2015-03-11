@@ -16,6 +16,7 @@ object Render extends App {
 
   // Render html pages
   write("index", views.html.index.render())
+  write("news", views.html.index.render())
   write("download", views.html.download.render())
   write("support", views.html.support.render())
   write("publications", views.html.publications.render())
