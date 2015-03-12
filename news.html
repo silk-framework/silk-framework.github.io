@@ -26,8 +26,8 @@
 	
     <div id="navigation">
       <ul>
-        <li><a class="selected" href="/">Home</a></li>
-		<li><a  href="/news">News</a></li>
+        <li><a  href="/">Home</a></li>
+		<li><a class="selected" href="/news">News</a></li>
         <li><a  href="/download">Download</a></li>
         <li><a  href="/support">Support</a></li>
         <li><a  href="/publications">Publications</a></li>
@@ -37,108 +37,33 @@
     <div id="main">
       
 
-  <div id="authors">
-
-    <p>
-      <a href="http://robertisele.com">Robert Isele</a> (eccenca GmbH) <br>
-      <a href="http://www.hpi.uni-potsdam.de/naumann/people/anja_jentzsch.html">Anja Jentzsch</a> (Hasso Plattner Institut)<br>
-      <a href="http://www.bizer.de/">Christian Bizer</a> (University of Mannheim)<br>
-      <a href="mailto:julius.volz@gmail.com">Julius Volz</a> (Google)<br>
-      <a href="http://dws.informatik.uni-mannheim.de/en/people/researchers/petar-petrovski/">Petar Petrovski</a> (University of Mannheim)
-    </p>
-
-  </div>
-  
-  Silk is an open source framework for integrating heterogeneous data sources. The primary uses cases of Silk include:
   <ul>
-    <li>Generating links between related data items within different Linked Data sources.</li>
-    <li>Linked Data publishers can use Silk to set RDF links from their data sources to other data sources on the Web.</li>
-    <li>Applying data transformations to structured data sources.</li>
+    <li><strong>2014-02-21:</strong> Version 2.6 released including a new version of the Silk Workbench that offers a REST API and a Plugin System.
+      Also includes a first version of the <A href="#freetextpreprocessor">Silk Free Text Preprocessor</A> for producing a structured representation for linking from free text.</li>
+    <li><strong>2013-03-20:</strong> New article about Silk's active learning features: Robert Isele, Christian Bizer: <a href="http://dws.informatik.uni-mannheim.de/fileadmin/lehrstuehle/ki/pub/IseleBizer-ActiveLearningOfExpressiveLinkageRules-JWS2013.pdf">Active Learning of Expressive Linkage Rules using Genetic Programming</a>. To appear in the Journal of Web Semantics, 2013.</li>
+    <li><strong>2012-08-20:</strong> New article about Silk's linkage rule learning features: Robert Isele, Christian Bizer: <a href="http://vldb.org/pvldb/vol5/p1638_robertisele_vldb2012.pdf">Learning Expressive Linkage Rules using Genetic Programming</a>. Proceedings of the VLDB Endowment (PVLDB), Vol. 5, No. 11, pp. 1638-1649, August 2012.</li>
+    <li><strong>2012-03-06:</strong> Version 2.5.3 released including various improvements and bugfixes.</li>
+    <li><strong>2012-02-21:</strong> Webinar about Silk Workbench. The <a href="http://www.youtube.com/watch?v=CPl5eeyW-Xk">screencast</a> and the <a href="http://www.slideshare.net/lod2project/slides-11702787" >slides</a> are available online.</li>
+    <li><strong>2011-11-17:</strong> Version 2.5.2 released adding active learning of linkage rules.</li>
+    <li><strong>2011-10-24:</strong> Presentation: Robert Isele, Christian Bizer: <a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/IseleBizer-Silk-Learning-OM2011.pdf">Learning Linkage Rules using Genetic Programming</a>. 6th International Workshop on Ontology Matching. Bonn, Germany, October 2011.</li>
+    <li><strong>2011-10-21:</strong> Version 2.5.1 released including various improvements to the Workbench.</li>
+    <li><strong>2011-10-03:</strong> Version 2.5 released adding support for learning linkage rules.</li>
+    <li><strong>2011-07-22:</strong> Version 2.4.2 released adding SPARQL/Update output, improved indexing and many improvements to the Silk Workbench.</li>
+    <li><strong>2011-07-01:</strong> Version 2.4.1 released with an improved Silk Workbench, various new distance measures and per-comparison thresholds.</li>
+    <li><strong>2011-06-12:</strong> Presentation: Robert Isele, Anja Jentzsch, Christian Bizer: <a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/IseleJentzschBizer-WebDB2011.pdf">Efficient Multidimensional Blocking for Link Discovery without losing Recall</a>. 14th International Workshop on the Web and Databases (WebDB 2011), Athens, June 2011.</li>
+    <li><strong>2011-06-01:</strong> Version 2.4 released including the new Silk Workbench, a web application which guides the user through the process of interlinking different data sources.</li>
+    <li><strong>2011-01-31:</strong> Version 2.3 released with improved performance employing parallel data loading and a new blocking method.</li>
+    <li><strong>2010-12-20:</strong> Version 2.3 beta released offering an increased performance by using a new blocking method.</li>
+    <li><strong>2010-10-08:</strong> Presentation: Robert Isele, Anja Jentzsch, Christian Bizer: <a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/IseleJentzschBizer-Silk-Cold2010.pdf"> Silk Server - Adding missing Links while consuming Linked Data</a>. 1st International Workshop on Consuming Linked Data (COLD 2010), Shanghai, November 2010.</li>
+    <li><strong>2010-10-06:</strong> Version 2.2 released. This release includes Silk MapReduce which is based on Hadoop and enables Silk to scale out to very large datasets by distributing the link generation to multiple machines.</li>
+    <li><strong>2010-09-15:</strong> Version 2.1 released. The main addition is Silk Server which provides a REST interface that handles an incoming data stream of newly discovered entities, while keeping track of known entities. It generates links between the incoming entities based on a set of given Silk Link Specifications.</li>
+    <li><strong>2010-07-02:</strong> Version 2.0 released. Reimplementation of the Silk framework in Scala providing improved scalability, optional blocking features and support of the OAEI Alignment format as additional output format. </li>
+    <li><strong>2009-10-27:</strong> Presentation about Silk at ISWC 2009: <a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/VolzBizerGaedkeKobilarov-ISWC2009-Silk.pdf">Discovering and Maintaining Links on the Web of Data</a> (<a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/VolzBizerGaedkeKobilarov-ISWC2009-Silk-Talk.pdf">Slides</a>).</li>
+    <li><strong>2009-03-02:</strong> Version 0.2 released. Adding prematching of data items.</li>
+    <li><strong>2009-02-01:</strong> Version 0.1 released. Initial release in Python.</li>
   </ul>
-  Silk is based on the Linked Data paradigm, which is built on two simple ideas: First, RDF provides an expressive data model for representing structured information. Second, RDF links are set between entities in different data sources. Background information about Linked Data and the vision of the Web of Data can be found in the overview article <a href="http://tomheath.com/papers/bizer-heath-berners-lee-ijswis-linked-data.pdf">Linked Data - The Story So Far</a> and the <a href="http://linkeddatabook.com">Linked Data book</a>.
-
-  <H2><a name="linking"></a>Linking Data Sources</H2>
-  
-  <p>Using the declarative <em>Silk - Link Specification Language</em> (Silk-LSL), developers can specify which types of RDF links should be discovered between data sources as well as which conditions data items must
-    fulfill in order to be interlinked. These link conditions may combine various similarity
-    metrics and can take the graph around a data item into account, which is addressed
-    using an RDF path language. Silk accesses the data sources that should be interlinked via the SPARQL protocol and can thus be used against local as well as remote SPARQL endpoints. Link Specifications can be created using the <a href"#workbench">Silk Workbench</a> graphical user interface or manually in XML.</p>
-
-  <img src="assets/images/linkageRule.png" ></img>
-  
-   <p>
-    The linking process is based on the <em>Silk Link Discovery Engine</em> which offers the following features:
-    <ul>
-      <li>Flexible, declarative language for specifying linkage rules</li>
-      <li>Support of RDF link generation (owl:sameAs links as well as other types)</li>
-      <li>Employment in distributed environments (by accessing local and remote SPARQL endpoints)</li>
-      <li>Usable in situations where terms from different vocabularies are mixed and where no consistent RDFS or OWL schemata exist</li>
-      <li>Scalability and high performance through efficient data handling (speedup factor of 20 compared to Silk 0.2):
-        <ul>
-          <li>Reduction of network load by caching and reusing of SPARQL result sets</li>
-          <li>Multi-threaded computation of the data item comparisons (3 million comparisons per minute on a Core2 Duo)</li>
-          <li>Optional blocking of data items</li>
-        </ul>
-      </li>
-    </ul>
-  </p>
-  
-  <H2><a name="transformations"></a>Data Transformations</H2>
-  
-  <p>
-  While the main part of a integration workflow lies in the interlinking of data sources. Data sets coming fron different sources sometimes required the harmonization of the schemata and data formats prior to interlinking. For this purpose, Silk enables the user to create and execute lightweight transformation rules. Transformation rules may be used for:
-  <ul>
-    <li>Data cleaning, e.g., removing unwanted values</li>
-    <li>Mapping between different properties or adding new properties with generated values.</li>
-    <li>Converting between different data formats. Data may read from sources such as RDF, CSV or XML. Typically the output is written to an RDF store which can be queried using SPARQL, but data can also be written as CSVs to be imported into relational databases or opened in Excel.</li>
-  </ul>
-  </p>
-  
-  <img src="assets/images/dataTransformation.png" ></img>
-  
-  <H2><a name="workbench"></a>Silk Workbench</H2>
-  
-  <p>
-    <em>Silk Workbench</em> is a web application which guides the user through the process of interlinking different data sources.
-  </p>
-
-  <p>
-    Silk Workbench offers the following features:
-    <ul>
-      <li>It enables the user to manage different sets of data sources, linking tasks and transformation tasks.</li>
-      <li>It offers a graphical editor which enables the user to easily create and edit linking tasks and transformation tasks.</li>
-      <li>As finding a good linking heuristics is usually an iterative process, the Silk Workbench makes it possible for the user to quickly evaluate the links which are generated by the current link specification.</li>
-      <li>It allows the user to create and edit a set of reference links used to evaluate the current link specification.</li>
-    </ul>
-    Documentation of the Silk Workbench is available in the <a href="https://www.assembla.com/spaces/silk/wiki/Silk_Workbench">Wiki</a>.
-  </p>
-  
-  <h2><a name="commandline"></a>Silk Command Line Applications</h2>
-
-  In addition to the Workbench, Silk provides three different command line applications for executing link specifications:
-  <ul>
-    <li><a href="http://www4.wiwiss.fu-berlin.de/bizer/silk/singlemachine/"><em>Silk Single Machine</em></a> is used to generate RDF links on a single machine. The datasets that should be interlinked can either reside on the same machine or on remote machines which are accessed via the SPARQL protocol. <em>Silk Single Machine</em> provides multithreading and caching. In addition, the performance is further enhanced using the <a href="http://wifo5-03.informatik.uni-mannheim.de/bizer/pub/IseleJentzschBizer-WebDB2011.pdf">MultiBlock</a> blocking algorithm.</li>
-    <li><a href="http://www4.wiwiss.fu-berlin.de/bizer/silk/mapreduce/"><em>Silk MapReduce</em></a> is used to generate RDF links between data sets using a cluster of multiple machines. <em>Silk MapReduce</em> is based on Hadoop and can for instance be run on Amazon Elastic MapReduce. <em>Silk MapReduce</em> enables Silk to scale out to very big datasets by distributing the link generation to multiple machines.</li>
-    <li><a href="http://www4.wiwiss.fu-berlin.de/bizer/silk/server/"><em>Silk Server</em></a> can be used as an identity resolution component within applications that consume Linked Data from the Web. <em>Silk Server</em> provides an HTTP API for matching entities from an incoming stream of RDF data while keeping track of known entities. It can be used for instance together with a Linked Data crawler to populate a local duplicate-free cache with data from the Web.</li>
-  </ul>
-
-  Documentation of all three command line applications is available in the <a href="https://www.assembla.com/spaces/silk/wiki/Command_Line_Applications">Wiki</a>.
-
-  <h2><a name="freetextpreprocessor"></a>Silk Free Text Preprocessor</h2>
-
-  <p>
-    The main goal of the Free Text Pre-processing tool is to produce a structured representation of data that contains or is derived from free text. The tool takes as input an RDF file with properties with free text values and an additional RDF file that contains structured data used to learn the extraction model. Based on the learned model the tool extracts new property-value pairs from free text. The resulting output is an RDF dump file containing the extracted structured values. Using a declarative XML-based language, a user can specify which extraction methods to use.
-  </p>
-
-  <p>
-    Documentation of the Silk Free Text Preprocessor is available in the <a href="https://www.assembla.com/spaces/silk/wiki/Silk_Free_Text_Preprocessor">Wiki</a>.
-  </p>
-
-  <H2><a name="acknowledgments"></a>Acknowledgments</H2>
-  <p>This work was supported in part by Vulcan Inc. as part of its <a href="http://www.projecthalo.com">Project Halo</a> and by the EU FP7 project <a href="http://lod2.eu/">LOD2 - Creating Knowledge out of Interlinked Data</a> (Grant No. 257943).</p>
 
     </div>
 
   </body>
 </html>
-
