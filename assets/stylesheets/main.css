@@ -56,17 +56,16 @@ strong {
 
 #navigation {
   float: left;
-  padding-left: 48px;
   width: 100%;
   background: #F8F8F8;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;}
 
 #navigation ul {
+  padding-left: 48px;
   list-style-type: none;
   margin-left: 0;
   margin-top: 0;
-  padding-left: 0;
 }
 
 #navigation li {
