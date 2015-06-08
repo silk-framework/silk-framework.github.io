@@ -109,3 +109,10 @@ strong {
   float: right;
   text-align: right;
 }
+
+table, th, td {
+  padding: 8px;
+  line-height: 1.42857;
+  vertical-align: top;
+  border-top: 1px solid #DDD;
+}
