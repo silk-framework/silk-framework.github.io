@@ -14,4 +14,4 @@ Do not edit the html files in this directory as they are generated from template
 
 * Navigate to generator folder
 * sbt "run-main Render"
-* After the next commit, the pages are live at http://silk-framework.com
+* After the next commit, the pages are live at http://silkframework.org
